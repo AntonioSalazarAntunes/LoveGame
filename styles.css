@@ -1,0 +1,83 @@
+:root {
+    --ff-primary-mont: "Montserrat", sans-serif;
+    --ff-neutral-isl: "Island Moments";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+}
+
+.main-container img {
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+
+.main-container .wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 2em;
+
+}
+
+.main-container .wrapper h1 {
+    font-family: var(--ff-neutral-isl);
+    text-align: center;
+    font-size: 8vw;
+    margin-top: .3em;
+}
+
+.main-container .wrapper p {
+    margin: 1em auto 1em auto;
+    font-family: var(--ff-primary-mont);
+    font-size: 3vw;
+}
+
+.main-container .wrapper .name-wrapper {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:540px) {
+    .main-container .wrapper .name-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+.main-container .wrapper .name-wrapper input {
+    font-size: 2vw;
+    border-radius: .3em;
+    outline: none;
+    border-style: solid;
+    padding: .5vw;
+    margin: 1vw;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.main-container .wrapper button {
+    background: red;
+    border: none;
+    padding: 2vw;
+    border-radius: .5vw;
+    color: white;
+    cursor: pointer;
+    font-size: 2vw;    
+}
